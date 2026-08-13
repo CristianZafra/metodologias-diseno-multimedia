@@ -1,0 +1,73 @@
+</div>
+    <div class="recommender">
+      <div class="select-panel">
+        <label for="projectType">Tipología de proyecto multimedia</label>
+        <select id="projectType"></select>
+        <label for="uncertainty">Incertidumbre dominante</label>
+        <select id="uncertainty">
+          <option value="">Usar solamente la tipología</option>
+          <option value="0">¿Qué problema resolver?</option>
+          <option value="1">¿Cómo debe interactuar la persona?</option>
+          <option value="2">¿Qué aprender rápido antes de construir?</option>
+          <option value="3">Canales y procesos internos</option>
+          <option value="4">Múltiples actores y efectos indirectos</option>
+          <option value="5">Integración, producción y operación tecnológica</option>
+          <option value="6">Conocimiento verificable / investigación</option>
+          <option value="7">Experiencia lúdica o educativa</option>
+        </select>
+      </div>
+      <div class="recommendation" id="recommendation"></div>
+    </div>
+    <h3 style="margin-top:34px">Criterios de elección</h3>
+    <div class="questions" id="selectionCriteria"></div>
+  </div>
+</section>
+
+<section id="ruta" class="section">
+  <div class="container">
+    <div class="section-head"><div class="section-no">04 · Articulación</div><div><h2>Ruta integrada para proyectos multimedia</h2><p class="section-intro" id="routeIntro"></p></div></div>
+    <div class="timeline" id="timeline"></div>
+    <div class="route-detail" id="routeDetail"></div>
+    <h3 style="margin-top:34px">Responsabilidad metodológica</h3>
+    <div class="questions" id="responsibilities"></div>
+    <div class="callout" id="routeOutcome"></div>
+  </div>
+</section>
+
+<section id="herramientas" class="section">
+  <div class="container">
+    <div class="section-head"><div class="section-no">05 · Operación</div><div><h2>De la decisión a la evidencia</h2><p class="section-intro">Antes de elegir software, se distingue entre actividad, instrumento, técnica, herramienta y criterio de salida.</p></div></div>
+    <div class="glossary" id="glossary"></div>
+    <div class="callout" id="toolRule" style="margin-top:34px"></div>
+    <div class="tools-grid" id="toolsGrid"></div>
+  </div>
+</section>
+
+<section id="referencias" class="section">
+  <div class="container">
+    <div class="section-head"><div class="section-no">06 · Referencias</div><div><h2>Fuentes de base</h2><p class="section-intro">Selección bibliográfica del documento para profundizar en los modelos presentados.</p></div></div>
+    <div class="refs" id="refs"></div>
+  </div>
+</section>
+</main>
+
+<div class="compare-drawer" id="compareDrawer"><span id="compareCount">0 seleccionados</span><button onclick="openCompare()">Comparar</button><button onclick="clearCompare()">Limpiar</button></div>
+
+<div class="modal" id="modelModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-card">
+    <div class="modal-head"><h3 id="modalTitle"></h3><button class="close" onclick="closeModal()" aria-label="Cerrar">×</button></div>
+    <div class="tabs" id="modalTabs"></div>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<div class="modal" id="compareModal" role="dialog" aria-modal="true" aria-labelledby="compareTitle">
+  <div class="modal-card">
+    <div class="modal-head"><h3 id="compareTitle">Comparación de metodologías</h3><button class="close" onclick="closeCompare()" aria-label="Cerrar">×</button></div>
+    <div class="tab-pane active" id="compareContent"></div>
+  </div>
+</div>
+
+<footer class="footer"><div class="container"><div id="academicNote"></div><div style="margin-top:10px">Recurso HTML de navegación académica · contenido organizado a partir del documento suministrado.</div></div></footer>
+
+<script id="course-data" type="application/json">{"hero": {"title": "Metodologías de diseño aplicables a Ingeniería Multimedia", "subtitle": "Modelos, fases, artefactos, criterios de selección y articulación con proyectos interactivos, inmersivos, físico-digitales, de servicio, videojuegos y multimedia educativa.", "idea": "Idea central: en Ingeniería Multimedia conviene tratar las metodologías como marcos complementarios. Algunas ayudan a comprender y definir el problema; otras organizan la interacción, la experimentación, la producción técnica o la operación del sistema.", "meta": [{"label": "Alcance", "value": "14 modelos de diseño y desarrollo cercanos al campo multimedia"}, {"label": "Lectura recomendada", "value": "comparar propósito, fases, artefactos, fortalezas y límites antes de seleccionar"}, {"label": "Criterio de pertinencia", "value": "integración de personas, actividad, interfaz, contenido, tecnología, entorno y organización"}, {"label": "Enfoque", "value": "diseño basado en evidencia, iteración, prototipado y trazabilidad de decisiones"}]}, "framework": {"title": "¿Qué significa “metodología de diseño” en Ingeniería Multimedia?", "lead": "Una metodología no es una lista fija de herramientas: organiza decisiones, evidencia y aprendizaje a lo largo del proyecto.", "callout": "Un sistema multimedia no es solo la suma de medios. Su comportamiento emerge de la relación entre personas, actividad, interfaz, contenido, tecnología, entorno y organización; por eso una metodología adecuada debe permitir conectar estas dimensiones y no tratar la estética, el software o la interacción como capas independientes.", "body": "La Ingeniería Multimedia combina problemas de diseño y problemas de ingeniería. El equipo debe decidir qué experiencia crear, para quién, en qué actividad y contexto, y al mismo tiempo definir cómo materializarla mediante software, dispositivos, contenidos, sensores, motores 3D, redes, datos, interfaces y procesos de operación. Esa doble naturaleza explica por qué ninguna metodología aislada cubre todo el ciclo.", "questions": ["¿Qué tipo de incertidumbre reduce: problema, usuario, interacción, tecnología, negocio, servicio u operación?", "¿Dónde sitúa a las personas y cómo incorpora evidencia de contexto y uso?", "¿Cómo organiza divergencia, convergencia, prototipado, evaluación e iteración?", "¿Qué artefactos produce y qué decisiones permite justificar?", "¿Cómo se conecta con implementación técnica, pruebas y ciclo de vida?", "¿En qué tipologías multimedia aporta más valor y cuándo resulta insuficiente?"], "map": [["Modelo", "Foco principal", "Estructura", "Encaje multimedia"], ["Design Thinking", "Innovación centrada en personas", "Empatizar–Definir–Idear–Prototipar–Probar", "Problemas abiertos, apps, productos/servicios"], ["IDEO HCD", "Innovación contextual y social", "Inspiración–Ideación–Implementación", "Contextos reales, innovación social, servicios"], ["Double Diamond", "Divergencia/convergencia", "Descubrir–Definir–Desarrollar–Entregar", "Ruta general de proyectos de diseño"], ["ISO 9241-210", "Calidad de interacción", "Contexto–Requisitos–Soluciones–Evaluación", "Interfaces, sistemas interactivos, accesibilidad"], ["Interaction Design", "Comportamiento e interfaz", "Requisitos–Alternativas–Prototipos–Evaluación", "Web, móvil, HCI, dispositivos interactivos"], ["Lean UX", "Aprendizaje rápido", "Supuestos–Hipótesis–MVP–Feedback", "Productos digitales y equipos ágiles"], ["Design Sprint", "Decisión rápida", "Mapear–Bosquejar–Decidir–Prototipar–Probar", "Riesgos concretos y decisiones de concepto"], ["Service Design", "Experiencia multicanal", "Explorar–Crear–Reflexionar–Implementar", "Servicios, plataformas, PSS, omnicanalidad"], ["Participatory Design", "Cocreación", "Investigar–Co-diseñar–Prototipar–Negociar", "Sistemas con múltiples actores y apropiación"], ["Systemic Design", "Complejidad sociotécnica", "Mapear–Enmarcar–Intervenir–Aprender", "Ecosistemas, ciudades, plataformas complejas"], ["CDIO", "Ciclo de vida de ingeniería", "Concebir–Diseñar–Implementar–Operar", "Sistemas multimedia integrados"], ["DSRM", "Diseño como investigación", "Problema–Objetivos–Diseño–Demostración–Evaluación–Comunicación", "Proyectos I+D, trabajos de grado"], ["MDA", "Experiencia de juego", "Mecánicas–Dinámicas–Estéticas", "Videojuegos y experiencias lúdicas"], ["ADDIE", "Multimedia educativa", "Analizar–Diseñar–Desarrollar–Implementar–Evaluar", "Cursos, simuladores, contenidos educativos"]]}, "models": [{"id": 1, "slug": "design-thinking", "symbol": "◇", "title": "Design Thinking · modelo Stanford d.school", "subtitle": "Innovación centrada en personas y aprendizaje por prototipos", "purpose": "Explorar problemas abiertos y producir alternativas pertinentes antes de comprometer recursos en una solución.", "fit": "Apps, interfaces, productos digitales, experiencias interactivas, físico-digitales y conceptos de servicio.", "artifacts": "hallazgos de usuario, punto de vista, HMW, ideas, prototipos, resultados de prueba.", "risk": "Puede volverse superficial si se reduce a post-its o a una secuencia lineal sin evidencia ni criterios explícitos.", "phaseStrip": ["Empatizar", "Definir", "Idear", "Prototipar", "Probar"], "phases": [{
