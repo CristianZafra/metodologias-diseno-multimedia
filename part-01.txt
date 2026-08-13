@@ -1,0 +1,85 @@
+;margin-bottom:8px}.glossary-card span{font-size:.83rem;color:var(--muted)}
+.tools-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.tool-card{border:1px solid var(--line);border-radius:16px;padding:18px;background:var(--surface)}.tool-card h4{margin:0 0 8px;color:var(--teal2)}.tool-card p{margin:6px 0;color:var(--muted);font-size:.86rem}.tool-card b{color:var(--ink)}
+.refs{columns:2;column-gap:32px}.ref{break-inside:avoid;border-top:1px solid var(--line);padding:12px 0;color:var(--muted);font-size:.86rem}
+.footer{padding:50px 0 70px;border-top:1px solid var(--line);color:var(--dim);font-size:.82rem}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.78);backdrop-filter:blur(12px);z-index:90;display:none;padding:24px;overflow:auto}.modal.open{display:block}.modal-card{max-width:1080px;margin:24px auto;background:var(--bg2);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);overflow:hidden}.modal-head{position:sticky;top:0;background:rgba(14,16,16,.95);backdrop-filter:blur(15px);padding:22px 24px;border-bottom:1px solid var(--line);display:flex;gap:16px;justify-content:space-between;align-items:center;z-index:2}.modal-head h3{margin:0;font-size:1.6rem}.close{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink);font-size:1.25rem}.tabs{display:flex;gap:7px;overflow:auto;padding:16px 24px;border-bottom:1px solid var(--line)}.tab{white-space:nowrap;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--muted);padding:9px 13px}.tab.active{color:#0c0d0d;background:var(--ink);border-color:var(--ink)}.tab-pane{display:none;padding:28px 24px 32px}.tab-pane.active{display:block}.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.info-box{border:1px solid var(--line);border-radius:16px;padding:18px;background:var(--surface)}.info-box b{display:block;color:var(--teal2);font-size:.78rem;text-transform:uppercase;letter-spacing:.09em;margin-bottom:7px}.info-box.risk b{color:var(--danger)}.info-box p{margin:0;color:var(--muted)}
+.phase-flow{display:flex;gap:8px;overflow:auto;padding-bottom:10px;margin-bottom:20px}.phase-pill{white-space:nowrap;padding:8px 12px;border:1px solid var(--line);border-radius:999px;color:var(--gold2)}
+.phase-list,.process-list{display:grid;gap:10px}.phase-row,.process-row{border:1px solid var(--line);border-radius:16px;padding:18px;background:var(--surface)}.phase-row h4,.process-row h4{margin:0 0 9px;font-size:1.02rem}.phase-columns{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:12px}.phase-columns p{font-size:.86rem;color:var(--muted);margin:0}.phase-columns b{color:var(--ink);font-size:.76rem;text-transform:uppercase;letter-spacing:.07em;display:block;margin-bottom:4px}
+.bullet-list{margin:8px 0 0;padding-left:19px;color:var(--muted)}.bullet-list li{margin:6px 0}.output{margin-top:10px;padding:10px 12px;border-radius:10px;background:rgba(111,170,162,.08);color:var(--teal2);font-size:.86rem}
+.example-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.example,.warning{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}.example h4{color:var(--teal2)}.warning h4{color:var(--danger)}.example p,.warning p{color:var(--muted)}
+.compare-drawer{position:fixed;right:18px;bottom:18px;z-index:60;background:var(--ink);color:#0b0c0c;border-radius:18px;padding:13px 16px;display:none;align-items:center;gap:12px;box-shadow:var(--shadow)}.compare-drawer.show{display:flex}.compare-drawer button{border:0;background:#161818;color:var(--ink);border-radius:10px;padding:8px 11px}
+.compare-table-wrap{overflow:auto}.compare-table{width:100%;border-collapse:collapse;min-width:800px}.compare-table th,.compare-table td{border-bottom:1px solid var(--line);padding:14px;text-align:left;vertical-align:top}.compare-table th{color:var(--gold2);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em}.compare-table td{color:var(--muted);font-size:.88rem}.compare-table td:first-child{color:var(--ink);font-weight:800}
+.empty{padding:34px;border:1px dashed var(--line);border-radius:18px;text-align:center;color:var(--muted)}
+.kbd{font-family:ui-monospace,monospace;border:1px solid var(--line);border-bottom-width:2px;padding:2px 6px;border-radius:6px;color:var(--muted);font-size:.75rem}
+@media(max-width:1050px){.model-grid{grid-template-columns:repeat(2,1fr)}.timeline{grid-template-columns:repeat(4,1fr)}.tools-grid{grid-template-columns:repeat(2,1fr)}.glossary{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:800px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:70px}.section-head{grid-template-columns:1fr}.questions{grid-template-columns:1fr}.recommender{grid-template-columns:1fr}.model-grid{grid-template-columns:1fr}.timeline{grid-template-columns:repeat(2,1fr)}.route-detail-grid,.summary-grid,.phase-columns,.example-grid{grid-template-columns:1fr}.glossary{grid-template-columns:1fr 1fr}.refs{columns:1}.brand{display:none}.topbar-inner{padding-inline:12px}.container{padding-inline:16px}.toolbar{top:54px}}
+@media(max-width:520px){h1{font-size:3.3rem}.meta-grid,.rec-grid,.tools-grid,.glossary{grid-template-columns:1fr}.timeline{grid-template-columns:1fr}.hero-panel{padding:20px}.modal{padding:0}.modal-card{margin:0;border-radius:0;min-height:100vh}.section{padding:72px 0}}
+@media print{.topbar,.progress,.toolbar,.hero-actions,.compare-drawer,.modal{display:none!important}body{background:white;color:#111}.section{border-color:#ddd}.model-card,.hero-panel,.info-box{background:white;border-color:#ccc;color:#111}.muted{color:#555}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">Ingeniería Multimedia · Metodologías</div>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a><a href="#marco">Marco</a><a href="#modelos">14 modelos</a>
+      <a href="#selector">Selector</a><a href="#ruta">Ruta integrada</a><a href="#herramientas">Herramientas</a><a href="#referencias">Referencias</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="inicio" class="container">
+  <div class="hero">
+    <div>
+      <div class="eyebrow">Documento de apoyo académico · experiencia interactiva</div>
+      <h1 id="heroTitle"></h1>
+      <p class="lead" id="heroSubtitle"></p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#modelos">Explorar modelos</a>
+        <a class="btn accent" href="#selector">Encontrar una metodología</a>
+        <button class="btn" onclick="window.print()">Versión para imprimir</button>
+      </div>
+    </div>
+    <aside class="hero-panel">
+      <p class="idea" id="idea"></p>
+      <div class="meta-grid" id="metaGrid"></div>
+    </aside>
+  </div>
+</section>
+
+<section id="marco" class="section">
+  <div class="container">
+    <div class="section-head"><div class="section-no">01 · Marco de lectura</div><div><h2 id="frameworkTitle"></h2><p class="section-intro" id="frameworkLead"></p></div></div>
+    <div class="callout" id="frameworkCallout"></div>
+    <p class="section-intro" id="frameworkBody"></p>
+    <h3 style="margin-top:38px">Seis preguntas para comparar metodologías</h3>
+    <p style="color:var(--muted);margin-top:-4px">El progreso se guarda en este navegador como apoyo a la lectura.</p>
+    <div class="questions" id="questions"></div>
+  </div>
+</section>
+
+<section id="modelos" class="section">
+  <div class="container">
+    <div class="section-head"><div class="section-no">02 · Modelos</div><div><h2>Un mapa navegable de 14 enfoques</h2><p class="section-intro">Cada ficha reúne propósito, encaje multimedia, fases, evidencia, proceso operativo, ejemplo de aplicación y precauciones.</p></div></div>
+    <div class="toolbar">
+      <input id="search" class="search" type="search" placeholder="Buscar por modelo, propósito, fase, artefacto o contexto…" aria-label="Buscar metodologías">
+      <button class="filter active" data-filter="all">Todos</button>
+      <button class="filter" data-filter="personas">Personas</button>
+      <button class="filter" data-filter="interacción">Interacción</button>
+      <button class="filter" data-filter="experimento">Experimentación</button>
+      <button class="filter" data-filter="servicio">Servicio</button>
+      <button class="filter" data-filter="sistema">Sistema</button>
+      <button class="filter" data-filter="ingeniería">Ingeniería</button>
+      <button class="filter" data-filter="investigación">Investigación</button>
+      <button class="filter" data-filter="educación">Educación</button>
+    </div>
+    <div class="model-grid" id="modelGrid"></div>
+  </div>
+</section>
+
+<section id="selector" class="section">
+  <div class="container">
+    <div class="section-head"><div class="section-no">03 · Selección</div><div><h2>La metodología depende de la incertidumbre</h2><p class="section-intro" id="selectionIntro"></p></div></div>
+    <div class="callout" id="selectionRule">
